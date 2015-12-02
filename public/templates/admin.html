@@ -1,0 +1,22 @@
+<h1>ADMIN</h1>
+<button ui-sref='home'>Home</button>
+<hr/>
+<h3>Add Product</h3>
+<form>
+  <input ng-model='newProduct.title' placeholder='Title' type='text'/>
+  <input ng-model='newProduct.price' placeholder='Price' type='text'/>
+  <button type='submit' ng-click='postProduct(newProduct)'>Submit</button>
+</form>
+<hr/>
+<h3>Edit Products</h3>
+<select ng-options='product.title for product in products' ng-model='selectedProduct'></select>
+<form>
+  <div ng-show='selectedProduct'>
+    Current Title: {{selectedProduct.title}} </br>
+    Current Price: {{selectedProduct.price}}
+  </div>
+  <input type='text' ng-model='editedProduct.title' placeholder='Title Edit'>
+  <input type='text' ng-model='editedProduct.price' placeholder='Price Edit'>
+  <button type='submit' ng-click='updateProduct(selectedProduct._id, editedProduct)'>Confim Edits</button>
+  <button ng-click='deleteProduct(selectedProduct._id)'>Delete Product</button>
+</form>

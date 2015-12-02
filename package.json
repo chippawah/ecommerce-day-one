@@ -1,0 +1,25 @@
+{
+  "name": "ecommerce-day-one",
+  "version": "1.0.0",
+  "description": "<img src=\"https://devmounta.in/img/logowhiteblue.png\" width=\"250\" align=\"right\">",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chippawah/ecommerce-day-one.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chippawah/ecommerce-day-one/issues"
+  },
+  "homepage": "https://github.com/chippawah/ecommerce-day-one#readme",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "express": "^4.13.3",
+    "mongojs": "^1.4.1"
+  }
+}

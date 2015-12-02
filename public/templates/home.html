@@ -1,0 +1,12 @@
+<h1>Acme Ecommerce</h1>
+<button ui-sref='admin'>Admin</button>
+<hr/>
+<div>
+  <ul>
+    <div ng-repeat='product in products'>
+      Product: {{product.title}} <br/>
+      Price: ${{product.price}}
+      <hr/>
+    </div>
+  </ul>
+</div>
