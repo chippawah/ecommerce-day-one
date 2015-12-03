@@ -15,7 +15,7 @@ angular.module('ecommerce').controller('adminCtrl', function($scope, productServ
   }
 
   $scope.updateProduct = function(id, product){
-    var updateObj = {}
+    updateObj = {}
     //checking to see if they made edits so we dont update with an empty string
     //if there is an edit then we attach it to the object we want to send to our server for the update
     if(product.title){
