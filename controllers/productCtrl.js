@@ -24,7 +24,7 @@ module.exports = {
   },
   updateProduct: function(req, res){
     Product
-      .update({_id: req.params.id}, req.body, function(results){
+      .update({_id: req.params.id}, req.body, function(err,results){
         console.log(results);
         res.status(200).end();
       })

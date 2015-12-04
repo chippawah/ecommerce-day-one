@@ -4,4 +4,10 @@ angular.module('ecommerce').controller('homeCtrl', function($scope, productServi
       $scope.products = res.data
     })
   }()
+  $scope.addToCart = function(itemId){
+    cartService.addToCart(itemId).then(function(res){
+      console.log(res);
+      alert('Item Added!');
+    })
+  }
 })
